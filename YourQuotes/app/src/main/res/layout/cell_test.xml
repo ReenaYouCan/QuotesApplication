@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:background="#333"--><!--android:padding="20dp">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        card_view:cardBackgroundColor="#333"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#333"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <com.reamu.yourquotes.views.custom_control.CustomTextView
+                            android:id="@+id/tvTopic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="@dimen/_5dp"
+                            android:text="Success"
+                            android:textColor="@color/brown_50"
+                            custom:fontName="Lato-Bold.ttf" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imgBtnFav"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:padding="@dimen/_5dp"
+                                android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                            <ImageButton
+                                android:id="@+id/imgBtnShare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:padding="@dimen/_5dp"
+                                android:src="@drawable/ic_share_black_24dp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <com.reamu.yourquotes.views.custom_control.CustomTextView
+                        android:id="@+id/tvQuotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_10dp"
+                        android:text="The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education"
+                        android:textColor="@color/grey_500"
+                        custom:fontName="Lato-Regular.ttf" />
+
+                    <com.reamu.yourquotes.views.custom_control.CustomTextView
+                        android:id="@+id/tvAuthorr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/_5dp"
+                        android:text="Reena"
+                        android:textColor="@color/brown_50"
+                        custom:fontName="Lato-Bold.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
